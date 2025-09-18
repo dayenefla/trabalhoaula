@@ -25,7 +25,7 @@ class Program
             {
                 break;
             }
-
+            //comment
             if (opcao == "1") Modulo1_VerificadorAlfabeto();            
             if (opcao == "2") Modulo2_ClassificadorJSON();           
             if (opcao == "3") Modulo3_TerminaComB();            
@@ -57,7 +57,7 @@ class Program
                 return false;
             }
         }
-
+    // comentario
         return true;
     }
 
