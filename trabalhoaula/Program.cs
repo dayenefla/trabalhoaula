@@ -12,11 +12,11 @@ class Program
             Console.WriteLine("Menu:");
             Console.WriteLine();
             Console.WriteLine("Escolha uma opção:");
-            Console.WriteLine("1: Verificador de alfabeto Σ={a,b}");
-            Console.WriteLine("2: Classificador T/I/N por JSON");
-            Console.WriteLine("3: Programa de decisão: termina com 'b'?");
-            Console.WriteLine("4: Avaliador proposicional");
-            Console.WriteLine("5: Reconhecedor de pertencimento");
+            Console.WriteLine("1) Verificar alfabeto e cadeia (Σ={ a,b})");
+            Console.WriteLine("2) Classificador T/I/N por JSON");
+            Console.WriteLine("3) Decisor: termina com 'b'?");
+            Console.WriteLine("4) Avaliador proposicional (P,Q,R)");
+            Console.WriteLine("5) Reconhecedor: L_par_a e a b*");
             Console.WriteLine("0 - Sair");
             Console.Write("Opção: ");
             string opcao = Console.ReadLine();
@@ -26,29 +26,15 @@ class Program
                 break;
             }
 
-            if (opcao == "1")
-            {
-                Modulo1_VerificadorAlfabeto();
-            }
-            else if (opcao == "2")
-            {
-                Modulo2_ClassificadorJSON();
-            }
-            else if (opcao == "3")
-            {
-                Modulo3_TerminaComB();
-            }
-            else if (opcao == "4")
-            {
-                Modulo4_AvaliadorProposicional();
-            }
-            else if (opcao == "5")
-            {
-                Modulo5_Reconhecedor();
-            }
+            if (opcao == "1") Modulo1_VerificadorAlfabeto();            
+            if (opcao == "2") Modulo2_ClassificadorJSON();           
+            if (opcao == "3") Modulo3_TerminaComB();            
+            if (opcao == "4") Modulo4_AvaliadorProposicional();            
+            if (opcao == "5") Modulo5_Reconhecedor();
+            
             else
             {
-                Console.WriteLine("Opção inválida. Pressione Enter para voltar ao menu.");
+
                 Console.ReadLine();
             }
         }
